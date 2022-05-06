@@ -1,0 +1,55 @@
+@media only screen and (min-width: 900px) {
+    .mobileNavBar{
+        display: none !important;
+    }
+}
+
+.faBars, .faWindowClose {
+    display: none;
+    color: black;
+}
+
+@media only screen and (max-width: 900px) {
+    .faBars, .faWindowClose {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 75%);
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+}
+
+.mobileNavBar {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    transition: height 2s ease-in;
+    justify-content: center;
+}
+
+.mobileNavBar > ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.mobileNavBar > ul > li {
+    list-style: none;
+    margin: .75rem 0 .75rem 0;
+}
+
+.mobileNavBar > ul > li > a {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.mobileNavBar > ul > li > a:hover {
+    color: orange;
+}

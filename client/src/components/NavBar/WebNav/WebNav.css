@@ -1,0 +1,58 @@
+@media only screen and (max-width: 900px) {
+    .webNavBar {
+        display: none !important;
+    }
+}
+
+.webNavBar {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.webNavBar > ul {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+}
+
+.webNavBar > ul > li {
+    list-style: none;
+    margin: 0 1rem 0 1rem;
+}
+
+.webNavBar > ul > li:last-child {
+    margin-left: 10rem;
+}
+
+.webNavBar > ul > li:last-child a {
+    border-radius: 4px;
+    background: orange;
+    padding: 10px 22px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.webNavBar > ul > li:last-child > a:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: orange;
+}
+
+.webNavBar > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.webNavBar > ul > li > a:hover{
+    transition: all 0.1s ease-in-out;
+    color: orange;
+}
