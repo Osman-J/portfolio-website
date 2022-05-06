@@ -1,15 +1,23 @@
 import React from "react";
 import NavLinks from "../NavLinks/NavLinks";
-import { FaBars, FaWindowClose } from "react-icons/fa";
+import {GrMenu, GrClose} from "react-icons/gr";
 import './MobileNav.css';
 import {useState} from "react";
 
 function MobileNav() {
     const [showMenu, setShowMenu] = useState(false);
-    const openIcon = <FaBars className="faBars" onClick={() => {setShowMenu(true)}}/>
-    const closeIcon = <FaWindowClose className="faWindowClose" onClick={() => {setShowMenu(false)}}/> 
+    const [menuClass, setMenuClass] = useState("mobileNavBar");
+    const openIcon = <GrMenu className="grMenu" onClick={() => {
+        setShowMenu(true)
+        setMenuClass("mobileNavBar-opened")
+    }}/>
+    const closeIcon = <GrClose className="grClose" onClick={() => {
+        setShowMenu(false)
+        setMenuClass("mobileNavBar")
+    }}/>
+
     return (
-        <div className="mobileNavBar">
+        <div className={menuClass}>
             {showMenu ? closeIcon : openIcon}
             {showMenu && <NavLinks />}
         </div>
