@@ -1,8 +1,13 @@
-import react from "react";
+import React from "react";
+import MobileNav from "./MobileNav/MobileNav";
+import WebNav from "./WebNav/WebNav";
 
-function NavBar(){
+function NavBar() {
     return(
-        <h1>NavBar</h1>
+        <div>
+            <WebNav />
+            <MobileNav />
+        </div>
     );
 }
 
