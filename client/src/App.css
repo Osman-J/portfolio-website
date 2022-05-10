@@ -1,1 +1,17 @@
+.content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+@media only screen and (max-width: 1024px) {
+    .content {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .content {
+        width: 85%;
+    }
+}
