@@ -1,0 +1,130 @@
+/*
+    ======================
+    Global Styles
+    ======================
+*/
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-section > * {
+    flex: 1 1 50%;
+}
+
+/*
+    ======================
+    Container Styles
+    ======================
+*/
+
+.languages-div,
+.technologies-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+/*
+    ======================
+    Typography Styles
+    ======================
+*/
+#skills-header,
+#about-header {
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
+    font-weight: 600;
+    margin: 0px;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+#lang-header,
+#tech-header {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.875rem + 0.625vw, 1.625rem);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#skills-paragraph,
+#about-paragraph {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+    margin: 0px;
+}
+
+#about-paragraph {
+    max-width: 50ch;
+    line-height: 3rem;
+}
+
+.languages,
+.technologies {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: .75rem;
+    margin: .5rem;
+}
+
+.technologies {
+    background-color: orange;
+}
+
+/*
+    ======================
+    Media Queries
+    ======================
+*/
+
+@media only screen and (max-width: 900px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .languages-div,
+    .technologies-div {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    #about-header,
+    #skills-header,
+    #about-paragraph,
+    #lang-header,
+    #tech-header {
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #about-paragraph{
+        margin: 0px !important;
+        margin-bottom: 3rem !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-me-div {
+        flex: 1 1 70%;
+    }
+    .skills-div {
+        flex: 1 1 30%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    #about-paragraph{
+        margin-right: 3rem;
+    }
+}
