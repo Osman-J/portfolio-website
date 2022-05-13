@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from "react-scroll";
+import "./NavLinks.css"
 
-function NavLinks() {
+function NavLinks({closeMenu}) {
+
     return(
         <ul>
-            <li><a href="/#hello">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Work Experience</a></li>
+            <li><Link onClick={closeMenu} className="navlink" to="home" spy={true} smooth={true} duration={500} offset={-200}>Home</Link></li>
+            <li><Link onClick={closeMenu} className="navlink" to="about" spy={true} smooth={true} offset={-200} duration={500}>About</Link></li>
+            <li><Link onClick={closeMenu} className="navlink" to="projects" spy={true} smooth={true} offset={-200} duration={500}>Projects</Link></li>
+            <li><Link onClick={closeMenu} className="navlink" to="work-experience" spy={true} smooth={true} offset={-200} duration={500}>Work Experience</Link></li>
             <li><a href="/">Contact</a></li>
         </ul>
     );
