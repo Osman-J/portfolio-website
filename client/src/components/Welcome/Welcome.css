@@ -2,13 +2,10 @@
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: row;
-    /*justify-content: center;
-    align-items: center;*/
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    /*margin-left: 3rem;
-    margin-right: 3rem;*/
     align-items: center;
+    height: 100vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .welcome-section > * {
@@ -59,8 +56,9 @@
         justify-content: center;
         align-items: center;
         margin-top: 3rem;
-        /*margin-left: 1rem;
-        margin-right: 1rem;*/
+        margin-bottom: 10rem;
+        height: initial;
+        margin-top: 10rem;
     }
 
     .welcome-greeting {

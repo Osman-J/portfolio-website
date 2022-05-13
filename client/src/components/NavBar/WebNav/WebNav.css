@@ -6,12 +6,21 @@
 
 .webNavBar {
     margin: 0px;
-    margin-top: 2rem;
-    padding: 0px;
+    /*original*/
+    /*margin-top: 2rem;*/
+    /*padding: 0px;*/
     width: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
+    /*this fixes navbar at the top and allows for the 100vh on welcome section*/
+    /*position: absolute;*/
+    /*keeps navbar at top, test out the 100vh thing tho*/
+    position: fixed;
+    top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0px 8px 26px -7px #e4e4e4;
 }
 
 .webNavBar > ul {
@@ -31,7 +40,7 @@
 
 .webNavBar > ul > li:last-child a {
     border-radius: 4px;
-    background: orange;
+    background: #784cbd;
     padding: 10px 22px;
     color: #fff;
     border: none;
@@ -44,7 +53,7 @@
 .webNavBar > ul > li:last-child > a:hover{
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: orange;
+    color: #784cbd;
 }
 
 .webNavBar > ul > li > a {
@@ -55,5 +64,5 @@
 
 .webNavBar > ul > li > a:hover{
     transition: all 0.1s ease-in-out;
-    color: orange;
+    color: #784cbd;
 }

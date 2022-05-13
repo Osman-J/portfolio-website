@@ -8,10 +8,17 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
 }
 
 .about-section > * {
     flex: 1 1 50%;
+}
+
+.skills-card-container {
+    display: flex;
+    gap: 4rem;
 }
 
 /*
@@ -23,8 +30,14 @@
 .languages-div,
 .technologies-div {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+    box-shadow: 3px 3px 10px 3px #E3E3E3;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    height: fit-content;
 }
 
 /*
@@ -48,7 +61,7 @@
     padding: 0px;
     font-size: 1rem;
     font-size: clamp(1rem, 0.875rem + 0.625vw, 1.625rem);
-    font-weight: 500;
+    font-weight: 800;
     margin-bottom: 1rem;
 }
 
@@ -62,22 +75,16 @@
 #about-paragraph {
     max-width: 50ch;
     line-height: 3rem;
+    margin-bottom: 5rem;
 }
 
 .languages,
 .technologies {
     font-size: 1rem;
     font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
-    background-color: rebeccapurple;
-    color: white;
-    border-radius: 4rem;
+    font-weight: 600;
+    color: #784cbd;
     width: fit-content;
-    padding: .75rem;
-    margin: .5rem;
-}
-
-.technologies {
-    background-color: orange;
 }
 
 /*
@@ -89,13 +96,19 @@
 @media only screen and (max-width: 900px) {
     .about-section {
         flex-direction: column;
+        height: initial;
     }
 
     .languages-div,
     .technologies-div {
         justify-content: center;
         align-items: center;
-        margin-bottom: 1.5rem;
+        width: initial;
+    }
+
+    .skills-card-container {
+        flex-direction: column;
+        gap: .5rem;
     }
 
     #about-header,
@@ -110,7 +123,7 @@
 
     #about-paragraph{
         margin: 0px !important;
-        margin-bottom: 3rem !important;
+        margin-bottom: 10rem !important;
     }
 }
 
