@@ -33,11 +33,11 @@ function Projects() {
                     </div>
                     <h2 className="project-subtitle">Check it out</h2>
                     <div className="btn-div">
-                        <a className="btn" target="_blank" href="https://github.com/sdp1-kanban/kanban">GitHub</a>
+                        <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/sdp1-kanban/kanban">GitHub</a>
                     </div>
                 </div>
                 <div className="img-col">
-                    <img src={kanban} className="project-img"></img>
+                    <img src={kanban} className="project-img" alt="preview of kanban project"></img>
                 </div>
             </div>
             <hr />
@@ -62,12 +62,12 @@ function Projects() {
                     </div>
                     <h2 className="project-subtitle">Check it out</h2>
                     <div className="btn-div">
-                        <a className="btn" target="_blank" href="https://github.com/Osman-J/MovieDatabase">GitHub</a>
-                        <a className="btn" target="_blank" href="https://the-movie-database--osmanjan11.repl.co/">View</a>
+                        <a className="btn" target="_blank" rel="noreferrer" href="https://github.com/Osman-J/MovieDatabase">GitHub</a>
+                        <a className="btn" target="_blank" rel="noreferrer" href="https://the-movie-database--osmanjan11.repl.co/">View</a>
                     </div>
                 </div>
                 <div className="img-col">
-                    <img src={moviedb} className="project-img"></img>
+                    <img src={moviedb} className="project-img" alt="preview of movie database project"></img>
                 </div>
             </div>
             <hr />
@@ -91,11 +91,11 @@ function Projects() {
                     </div>
                     <h2 className="project-subtitle">Check it out</h2>
                     <div className="btn-div">
-                        <a className="btn" target="_blank" href="https://www1.specialolympicsontario.com/">View</a>
+                        <a className="btn" target="_blank" rel="noreferrer" href="https://www1.specialolympicsontario.com/">View</a>
                     </div>
                 </div>
                 <div className="img-col">
-                    <img src={specialolympics} className="project-img"></img>
+                    <img src={specialolympics} className="project-img" alt="preview of special olympics project"></img>
                 </div>
             </div>
             <hr />
