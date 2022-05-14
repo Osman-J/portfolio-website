@@ -20,6 +20,7 @@ label {
 }
 
 input[type=text],
+input[type=email],
 textarea {
     width: 100%;
     padding: 1rem;
@@ -38,6 +39,7 @@ textarea {
 }
 
 input[type=text]::placeholder,
+input[type=email]::placeholder,
 textarea::placeholder {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
@@ -59,4 +61,8 @@ input[type=submit]:hover {
     background-color: #202473;
     border-color: #202473;
     color: white;
+}
+
+input[type=submit]:disabled {
+    background-color: gray;
 }
