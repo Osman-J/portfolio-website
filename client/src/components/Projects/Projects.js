@@ -1,6 +1,7 @@
 import React from "react";
 import kanban from '../../graphics/kanban-img.svg';
 import moviedb from '../../graphics/moviedb.svg';
+import specialolympics from '../../graphics/olympics.svg';
 import './Projects.css';
 
 function Projects() {
@@ -32,8 +33,7 @@ function Projects() {
                     </div>
                     <h2 className="project-subtitle">Check it out</h2>
                     <div className="btn-div">
-                        <a className="btn" href="/#">GitHub</a>
-                        <a className="btn" href="/#">View</a>
+                        <a className="btn" target="_blank" href="https://github.com/sdp1-kanban/kanban">GitHub</a>
                     </div>
                 </div>
                 <div className="img-col">
@@ -62,8 +62,8 @@ function Projects() {
                     </div>
                     <h2 className="project-subtitle">Check it out</h2>
                     <div className="btn-div">
-                        <a className="btn" href="/#">GitHub</a>
-                        <a className="btn" href="/#">View</a>
+                        <a className="btn" target="_blank" href="https://github.com/Osman-J/MovieDatabase">GitHub</a>
+                        <a className="btn" target="_blank" href="https://the-movie-database--osmanjan11.repl.co/">View</a>
                     </div>
                 </div>
                 <div className="img-col">
@@ -91,11 +91,11 @@ function Projects() {
                     </div>
                     <h2 className="project-subtitle">Check it out</h2>
                     <div className="btn-div">
-                        <a className="btn" href="/#">View</a>
+                        <a className="btn" target="_blank" href="https://www1.specialolympicsontario.com/">View</a>
                     </div>
                 </div>
                 <div className="img-col">
-                    <img src={kanban} className="project-img"></img>
+                    <img src={specialolympics} className="project-img"></img>
                 </div>
             </div>
             <hr />
