@@ -10,7 +10,7 @@ function NavLinks({closeMenu}) {
             <li><Link onClick={closeMenu} className="navlink" to="about" spy={true} smooth={true} offset={-200} duration={500}>About</Link></li>
             <li><Link onClick={closeMenu} className="navlink" to="projects" spy={true} smooth={true} offset={-200} duration={500}>Projects</Link></li>
             <li><Link onClick={closeMenu} className="navlink" to="work-experience" spy={true} smooth={true} offset={-200} duration={500}>Work Experience</Link></li>
-            <li><a href="/">Contact</a></li>
+            <li><Link onClick={closeMenu} className="navlink" to="contact" spy={true} smooth={true} offset={-200} duration={500}>Contact</Link></li>
         </ul>
     );
 }

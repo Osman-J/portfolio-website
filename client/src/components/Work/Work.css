@@ -1,0 +1,55 @@
+.work-div {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
+.Collapsible{
+    font-size: 2rem;
+    box-shadow: 3px 3px 10px 3px #E3E3E3;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.trigger-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.trigger-arrow {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 2rem;
+    color:#784cbd;
+}
+
+.trigger-title {
+    margin: 0;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+    font-weight: 600;
+    color: #784cbd;
+}
+
+.work-experience-container {
+    padding: 2.5rem;
+    padding-top: 0;
+}
+
+.location {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+    font-weight: 500;
+}
+
+.details {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
