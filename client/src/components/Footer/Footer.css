@@ -1,0 +1,52 @@
+/*
+    =================
+    Container Styles
+    =================
+*/
+.footer {
+    margin: 0;
+    padding: 1rem;
+    background-color: #784cbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content >*{
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    =================
+    Typography Styles
+    =================
+*/
+
+.icon-link {
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    padding: .5rem;
+}
+
+.icon-link:hover {
+    transition: all .2s ease-in-out;
+    color: #202473;
+}
+
+.copyright {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
