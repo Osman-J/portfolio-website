@@ -10,10 +10,15 @@ function About() {
             <div className="about-me-div">
                 <h1 id="about-header">About Me</h1>
                 <p id="about-paragraph">
-                    I am a forward-thinking Software Engineer with background working
-                    productively in dynamic environments.
-                    I'm a proud team player focused on achieving project
-                    objectives with speed and accuracy.
+                    Hello, my name is Osman. I'm a Software Developer based in Toronto, ON.
+                    <br />
+                    <br />
+                    I started my coding journey in my early teen years and have been hooked ever since. I'm skilled in multiple
+                    languages/technologies and I'm continously working to gain more knowledge each day!
+                    <br />
+                    <br />
+                    When I'm not coding, you can find me engaged in other activities such as playing basketball
+                    and video games, as well as spending time with family and friends.
                 </p>
             </div>
             <div className="skills-div">
@@ -36,7 +41,6 @@ function About() {
                         <p className="technologies"><FaGithub />&nbsp; GitHub</p>
                         <p className="technologies"><SiIbm />&nbsp; IBM RTC</p>
                         <p className="technologies"><SiMongodb />&nbsp; MongoDB</p>
-                        <p className="technologies"><GrMysql />&nbsp; MySQL</p>
                         <p className="technologies"><FaDatabase />&nbsp; Oracle SQL</p>
                         <p className="technologies"><GrMicrofocus />&nbsp; Microfocus QTP/UFT</p>
                     </div>
