@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./Contact.css";
 import emailjs from "emailjs-com";
+import Success from "./Success";
+import Error from "./Error";
 
 function Contact() {
 
@@ -10,9 +12,11 @@ function Contact() {
 
         emailjs.sendForm('service_e17um5q', 'template_4bx98mc', e.target, 'A8CF1LJrJQ-CzOTzD')
             .then((result) => {
-                console.log(result.text);
+                setSent(true);
+                setError(false);
             }, (error) => {
-                console.log(error.text);
+                setSent(false);
+                setError(true);
             });
 
         e.target.reset();
@@ -25,10 +29,14 @@ function Contact() {
     };
 
     const [email, setEmail] = useState(newEmail);
+    const [sent, setSent] = useState(false);
+    const [error, setError] = useState(false);
 
     return (
         <div className="container" id="contact">
             <h1 className="section-header">Contact</h1>
+            {sent ? <Success /> : null}
+            {error ? <Error /> : null}
             <form onSubmit={sendEmail}>
                 <label htmlFor="name">Name</label>
                 <input required={true} onChange={(e) => { setEmail({ ...email, name: e.target.value }) }} type="text" id="name" name="name" placeholder="Your name..." />

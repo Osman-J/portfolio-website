@@ -1,8 +1,31 @@
+/*
+    =================
+    Container Styles
+    =================
+*/
 .container {
     margin-top: 20rem;
     margin-bottom: 20rem;
 }
 
+.success-div,
+.error-div {
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: #5cb85c;
+    border-radius: .75rem;
+}
+
+.error-div {
+    background-color: #d9534f;
+}
+
+/*
+    =================
+    Typography Styles
+    =================
+*/
 .section-header {
     font-size: 2rem;
     font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
@@ -12,12 +35,27 @@
     margin-bottom: 2rem;
 }
 
+.success-message,
+.error-message {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}
+
 label {
     font-size: 1rem;
     font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
     font-weight: 500;
     margin: 0px;
 }
+
+/*
+    =================
+    Form Input Styles
+    =================
+*/
 
 input[type=text],
 input[type=email],
