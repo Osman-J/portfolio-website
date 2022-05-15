@@ -14,7 +14,7 @@ function About() {
                     <br />
                     <br />
                     I started my coding journey in my early teen years and have been hooked ever since. I'm skilled in multiple
-                    languages/technologies and I'm continously working to gain more knowledge each day!
+                    languages/technologies and I'm continuously working to gain more knowledge each day!
                     <br />
                     <br />
                     When I'm not coding, you can find me engaged in other activities such as playing basketball
