@@ -10,7 +10,7 @@ function About() {
             <div className="about-me-div">
                 <h1 id="about-header">About Me</h1>
                 <p id="about-paragraph">
-                    Hello, my name is Osman. I'm a Software Developer based in Toronto, ON.
+                    Hello, my name is Osman. I'm a Software Developer based in Toronto, ON. and I'm currently seeking full-time opportunities as a Front-End or Full-Stack developer.
                     <br />
                     <br />
                     I started my coding journey in my early teen years and have been hooked ever since. I'm skilled in multiple
